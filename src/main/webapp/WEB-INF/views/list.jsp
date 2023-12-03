@@ -165,7 +165,7 @@
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
-	<th>Title</th>
+	<th>Title (click->view page)</th>
 	<th>Writer</th>
 	<th>Content</th>
 	<th>Regdate</th>
@@ -175,7 +175,7 @@
 <c:forEach items="${list}" var="u">
 	<tr class="box">
 		<td>${u.seq}</td>
-		<td>${u.title}</td>
+		<td onclick="location.href='view/${u.seq}'">${u.title}</td>
 		<td>${u.writer}</td>
 		<td>${u.content}</td>
 		<td>${u.regdate}</td>
